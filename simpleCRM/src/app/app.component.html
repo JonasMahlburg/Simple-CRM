@@ -4,8 +4,8 @@
       PLATZ FÜR LOGO
     </div>
     <ul class="menu-items">
-      <li><mat-icon>fact_check</mat-icon> Dashoboard</li>
-      <li><mat-icon>perm_identity</mat-icon>User</li>
+      <li routerLink="/" > <mat-icon>fact_check</mat-icon> Dashoboard</li>
+      <li routerLink="/user"><mat-icon>perm_identity</mat-icon>User</li>
     </ul>
   </mat-drawer>
 
@@ -15,8 +15,11 @@
         <mat-icon class="menu" (click)="drawer.toggle()">menu</mat-icon>
         <span>Simple CRM</span>
       </mat-toolbar-row>
-
     </mat-toolbar>
+<div class="router-container">
+  <router-outlet />
+</div>
+    
 
   </div>
 
